@@ -1,31 +1,25 @@
 import { useState } from "react";
 import Expenses from "./components/Expenses";
+import { Expense } from "./components/interfaces";
 import NewExpense from "./components/NewExpense";
-
-interface Expense {
-  id: string;
-  title: string;
-  amount: number;
-  date: Date;
-}
 
 const INITIAL_EXPENSES = [
   {
     id: "e1",
-    title: "Lava no carro",
+    title: "Lavada no carro",
     amount: 10.5,
     date: new Date(2023, 2, 6),
   },
   {
     id: "e2",
-    title: "Lava no carro",
-    amount: 10.5,
-    date: new Date(2023, 2, 6),
+    title: "Registro do fogão",
+    amount: 60,
+    date: new Date(2022, 2, 6),
   },
   {
     id: "e3",
-    title: "Lava no carro",
-    amount: 10.5,
+    title: "Bucha de canhão",
+    amount: 130,
     date: new Date(2023, 2, 6),
   },
 ];
