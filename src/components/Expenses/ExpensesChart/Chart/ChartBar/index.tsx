@@ -9,8 +9,8 @@ interface ChartBarProps {
 export const ChartBar = (props: ChartBarProps) => {
   let barFillHeight = "0%";
 
-  if (props.value > 0) {
-    barFillHeight = Math.round((props.value / props.maxValue) * 100).toString();
+  if (props.maxValue > 0) {
+    barFillHeight = Math.round((props.value / props.maxValue) * 100) + "%";
   }
 
   return (
@@ -18,10 +18,10 @@ export const ChartBar = (props: ChartBarProps) => {
       <div className="chart-bar__inner">
         <div
           className="chart-bar__fill"
-          style={{ height: barFillHeight, backgroundColor: "red" }}
+          style={{ height: barFillHeight }}
         ></div>
       </div>
-      <div className="chart-bar__label"></div>
+      <div className="chart-bar__label">{props.label}</div>
     </div>
   );
 };
