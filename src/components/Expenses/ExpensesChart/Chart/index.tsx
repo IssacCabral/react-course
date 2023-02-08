@@ -1,4 +1,4 @@
-import { DataPoints } from "../interfaces";
+import { DataPoints } from "../../../interfaces";
 import { ChartBar } from "./ChartBar";
 
 import "./styles.css";

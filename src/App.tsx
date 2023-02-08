@@ -8,7 +8,7 @@ const INITIAL_EXPENSES = [
     id: "e1",
     title: "Lavada no carro",
     amount: 10.5,
-    date: new Date(2023, 2, 6),
+    date: new Date(2023, 3, 6),
   },
   {
     id: "e2",
