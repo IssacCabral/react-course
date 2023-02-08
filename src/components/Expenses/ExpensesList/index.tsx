@@ -1,5 +1,5 @@
 import { Expense } from "../../interfaces";
-import ExpenseItem from "../ExpenseItem";
+import ExpenseItem from "./ExpenseItem";
 import "./styles.css";
 
 interface ExpensesListProps {
